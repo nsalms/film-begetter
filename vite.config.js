@@ -7,6 +7,7 @@ import autoprefixer from "autoprefixer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/film-begetter/",
   plugins: [vue()],
   resolve: {
     alias: {
