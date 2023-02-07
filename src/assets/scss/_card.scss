@@ -1,0 +1,28 @@
+@use "vars" as *;
+
+.card {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+
+  &-frame {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgba(lighten($background-normal, 15%), 0.3);
+    cursor: pointer;
+    transition: background ease 0.15s;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+
+    @media (--sm-viewport) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      background: rgba(lighten($background-normal, 25%), 0.3);
+    }
+  }
+}

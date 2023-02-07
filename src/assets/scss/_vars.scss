@@ -1,0 +1,35 @@
+$gutter: 1.5rem;
+
+$color-danger: #CC4E4E;
+
+$background-normal: #121829;
+$background-primary: #20283E;
+$background-secondary: #323B54;
+$background-accent: #7B6EF6;
+
+$text-color: #EBEEF5;
+$text-color-gray: #9FA2B4;
+$text-color-warning: #FFAD49;
+$text-color-secondary: #A8AEBF;
+$text-color-muted: #767E94; 
+
+$font-family: 'Poppins', sans-serif;
+
+$lts-tight: -0.02em;
+$lts-wide: 0.02em;
+
+$lh-close: 1.25;
+$lh-normal: 1.5;
+
+:root {
+  --gutter-width: 1.5vmax;
+  --outer-margin: 1rem;
+  --screen-lg-max: 75em;
+  --screen-md-max: 64em;
+  --screen-sm-max: 45em;
+  --screen-xs-max: 30em;
+}
+
+@custom-media --lg-viewport only screen and (max-width: 75em);
+@custom-media --md-viewport only screen and (max-width: 64em);
+@custom-media --sm-viewport only screen and (max-width: 45em);

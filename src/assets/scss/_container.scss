@@ -1,0 +1,16 @@
+@use "vars" as *;
+
+.wrap {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.container-fluid, .container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: var(--outer-margin, 2rem);
+  padding-left: var(--outer-margin, 2rem);
+}

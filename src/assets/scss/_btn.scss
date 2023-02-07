@@ -1,0 +1,15 @@
+@use "vars" as *;
+
+.btn {
+  background: $background-accent;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  appearance: none;
+
+  &:hover {
+    background: darken($background-accent, 5%);
+  }
+}
