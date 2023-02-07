@@ -2,6 +2,8 @@
 
 [>> Deploy demo](https://nsalms.github.io/film-begetter/)
 
+Figma site layout: https://www.figma.com/community/file/1115671240540103840
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
