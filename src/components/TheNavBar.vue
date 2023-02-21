@@ -55,6 +55,7 @@ export default {};
   &__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5em;
     align-items: center;
     padding: 0;
     list-style-type: none;
