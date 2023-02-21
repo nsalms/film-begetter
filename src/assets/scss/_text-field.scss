@@ -1,23 +1,24 @@
+@use "sass:color";
 @use "vars" as *;
 
 .text-field {
-  background-color: rgba($background-primary, 0.3);
-  border: 1px solid $background-secondary;
-  appearance: none;
-  padding: 1.5rem 2rem 1.5rem 3.5rem;
-  border-radius: 0.75rem;
   display: flex;
   width: 100%;
-  outline: none;
+  padding: 1.5rem 2rem 1.5rem 3.5rem;
   color: inherit;
+  background-color: rgba($background-primary, 0.3);
   background-repeat: no-repeat;
   background-position: 1rem 50%;
+  border: 1px solid $background-secondary;
+  border-radius: 0.75rem;
+  outline: none;
   transition: all ease 0.15s;
+  appearance: none;
 
   &:hover,
   &:focus {
     background-color: rgba($background-primary, 0.5);
-    border: 1px solid lighten($background-secondary, 5%);
+    border: 1px solid color.adjust($background-secondary, $lightness: 5%);
   }
 
   &::placeholder {

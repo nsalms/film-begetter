@@ -4,14 +4,15 @@ $icons: "close", "date", "star", "arrow-right", "search", "github";
 
 .icon {
   --icon-size: 1rem;
-  background-color: var(--icon-color, $text-color);
+
   display: inline-block;
   flex-shrink: 0;
+  width: var(--icon-size);
   height: var(--icon-size);
+  vertical-align: middle;
+  background-color: var(--icon-color, $text-color);
   mask-position: center;
   mask-repeat: no-repeat;
-  vertical-align: middle;
-  width: var(--icon-size);
 
   @each $name in $icons {
     &.icon-#{$name} {

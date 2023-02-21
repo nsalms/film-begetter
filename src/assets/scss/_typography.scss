@@ -1,27 +1,32 @@
 @use "vars" as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap";
 
 a {
   color: $background-accent;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   letter-spacing: $lts-wide;
   overflow-wrap: anywhere;
 }
 
-h1 {font-size: 2rem;}
+h1 { font-size: 2rem; }
+
 h2 {
-  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
-h3 {font-size: 1.125rem;}
-h4 {font-size: 1rem;}
+h3 { font-size: 1.125rem; }
+h4 { font-size: 1rem; }
 
 .text-tight {
-  letter-spacing: $lts-tight;
   line-height: $lh-close;
+  letter-spacing: $lts-tight;
 }

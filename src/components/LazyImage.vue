@@ -34,29 +34,29 @@ export default {
 
 <style lang="scss" scoped>
 .lazy-img {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: block;
   position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 0.5rem;
 
   &__skeleton {
-    background: $background-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    background: $background-primary;
   }
 
   > img {
-    vertical-align: bottom;
-    object-fit: cover;
-    border-style: none;
     width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-style: none;
   }
 }
 </style>

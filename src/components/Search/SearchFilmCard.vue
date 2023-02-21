@@ -64,18 +64,19 @@ export default {
   }
 
   &__img {
-    width: 12rem;
     flex-shrink: 0;
+    width: 12rem;
 
     @media (--sm-viewport) {
       width: 8rem;
     }
   }
+
   &__date {
-    margin-top: 1rem;
-    color: $text-color-warning;
     display: flex;
     align-items: center;
+    margin-top: 1rem;
+    color: $text-color-warning;
 
     @media (--sm-viewport) {
       font-size: 0.75rem;
@@ -83,22 +84,24 @@ export default {
 
     .icon {
       --icon-color: #{$text-color-warning};
+
       margin-right: 0.5rem;
     }
   }
+
   &__overview {
-    margin-top: 1rem;
-    color: $text-color-gray;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: -webkit-box;
-    line-clamp: 6;
+    margin-top: 1rem;
+    overflow: hidden;
+    color: $text-color-gray;
+    text-overflow: ellipsis;
     -webkit-line-clamp: 6;
+    line-clamp: 6;
     -webkit-box-orient: vertical;
 
     @media (--sm-viewport) {
-      line-clamp: 3;
       -webkit-line-clamp: 3;
+      line-clamp: 3;
     }
   }
 }

@@ -42,8 +42,8 @@ export default {};
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 0;
 
     @media (--sm-viewport) {
@@ -51,26 +51,28 @@ export default {};
       gap: 1rem;
     }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 
     @media (--sm-viewport) {
       gap: 1rem;
       justify-content: space-evenly;
     }
   }
+
   &__item {
     > a {
-      text-decoration: none;
+      padding: 0.75rem 1rem;
       color: $text-color-secondary;
       font-weight: 600;
-      padding: 0.75rem 1rem;
-      transition: all ease 0.15s;
+      text-decoration: none;
       border-radius: 0.5rem;
+      transition: all ease 0.15s;
 
       &:hover {
         background-color: rgba($background-primary, 0.5);

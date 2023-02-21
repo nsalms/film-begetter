@@ -101,31 +101,31 @@ export default {
 <style lang="scss" scoped>
 .details-header {
   position: relative;
-
   margin-bottom: 9.5rem;
 
   @media (--sm-viewport) {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
+
   &__img {
     border-radius: 2.5rem;
 
     @media (--sm-viewport) {
-      border-radius: 0;
       margin: 0 -1rem;
+      border-radius: 0;
     }
   }
 
   &__title-wrapper {
-    padding: 5rem;
     position: absolute;
     bottom: 0;
+    padding: 5rem;
     transform: translate(0, 50%);
 
     @media (--sm-viewport) {
       position: relative;
-      transform: none;
       text-align: center;
+      transform: none;
     }
 
     @media (--md-viewport) {
@@ -136,8 +136,8 @@ export default {
   &__title {
     padding: 2.5rem;
     background: rgba($background-primary, 0.8);
-    backdrop-filter: blur(12px);
     border-radius: 1.5rem;
+    backdrop-filter: blur(12px);
 
     @media (--sm-viewport) {
       padding: 1rem;
@@ -148,16 +148,17 @@ export default {
     }
   }
 }
+
 .details {
   display: flex;
-  justify-content: space-between;
   gap: 5rem;
-  padding: 0 5rem;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
+  padding: 0 5rem;
 
   @media (--md-viewport) {
-    padding: 0;
     gap: 2.5rem;
+    padding: 0;
   }
 
   @media (--sm-viewport) {
@@ -166,13 +167,13 @@ export default {
   }
 
   &__img {
-    max-width: 31rem;
     width: 100%;
+    max-width: 31rem;
   }
 
   &__info {
-    max-width: 31rem;
     width: 100%;
+    max-width: 31rem;
 
     > *:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -180,20 +181,21 @@ export default {
   }
 
   &__text {
-    font-size: 1.25rem;
     color: #8e95a9;
+    font-size: 1.25rem;
   }
 
   &__rating {
-    color: $text-color-warning;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background: rgba(#000, 0.65);
     display: inline-flex;
     align-items: center;
+    padding: 0.5rem;
+    color: $text-color-warning;
+    background: rgba(#000, 0.65);
+    border-radius: 0.5rem;
 
     .icon {
       --icon-color: #{$text-color-warning};
+
       margin-right: 0.5rem;
     }
   }
@@ -201,15 +203,15 @@ export default {
   &__facts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 1.5rem 5rem;
+    justify-content: space-between;
     font-size: 1.25rem;
 
     p small {
       display: block;
       margin-bottom: 0.5rem;
-      font-size: 1rem;
       color: $text-color-muted;
+      font-size: 1rem;
     }
   }
 }

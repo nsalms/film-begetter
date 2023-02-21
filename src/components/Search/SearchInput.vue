@@ -34,15 +34,17 @@ export default {
   display: flex;
   align-items: center;
 }
+
 .icon {
   --icon-size: 1.5rem;
   --icon-color: #{$text-color-gray};
+
   position: absolute;
 
   // Make icon not clickable
   &.icon-search {
-    pointer-events: none;
     left: 1rem;
+    pointer-events: none;
   }
 }
 </style>

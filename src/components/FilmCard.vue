@@ -48,10 +48,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* I use several approaches to blur sub image.
-   I noticed that desktop browsers perform better using filter: blur,
-   instead on iPhone it's better using backdrop-filter: blur
-*/
+/**
+ * I use several approaches to blur sub image.
+ * I noticed that desktop browsers perform better using filter: blur,
+ * instead on iPhone it's better using backdrop-filter: blur
+ */
 .card-frame {
   padding: 0.5rem;
 
@@ -59,10 +60,11 @@ export default {
     backdrop-filter: blur(80px); // for iPhone
   }
 }
+
 .film-card {
   display: block;
-  transition: transform ease 0.15s;
   transform: translateZ(0);
+  transition: transform ease 0.15s;
 
   &:hover {
     transform: scale(1.05);
@@ -73,8 +75,8 @@ export default {
     position: absolute;
     top: 0;
     z-index: -1;
-    user-select: none;
     padding: 0.5rem;
+    user-select: none;
 
     @supports not (-webkit-touch-callout: none) {
       filter: blur(80px); // for desktops
@@ -86,28 +88,29 @@ export default {
   }
 
   &__rating {
-    color: $text-color-warning;
-    background: rgba(#000, 0.65);
-    backdrop-filter: blur(8px);
     position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
     top: 1rem;
     left: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: $text-color-warning;
+    background: rgba(#000, 0.65);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(8px);
 
     .icon {
       --icon-color: #{$text-color-warning};
+
       margin-right: 0.5rem;
     }
   }
 
   &__title {
-    padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    padding: 0.5rem;
     overflow: hidden;
   }
 }

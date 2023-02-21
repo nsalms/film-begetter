@@ -23,8 +23,8 @@ export default {};
 
 <style lang="scss" scoped>
 .footer {
-  text-align: center;
   padding: 2rem 0;
+  text-align: center;
 }
 
 // Change icon color

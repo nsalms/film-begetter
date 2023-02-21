@@ -20,10 +20,10 @@ export default {
 
 <style lang="scss" scoped>
 .error {
+  padding: 2rem;
+  text-align: center;
   background: rgba($color-danger, 0.3);
   border: 1px solid $color-danger;
   border-radius: 0.75rem;
-  padding: 2rem;
-  text-align: center;
 }
 </style>

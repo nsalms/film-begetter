@@ -22,14 +22,14 @@ export default {
 
 <style lang="scss" scoped>
 .module-heading {
-  color: $text-color-muted;
-  margin: 2rem 0;
   display: flex;
   align-items: center;
+  margin: 2rem 0;
+  color: $text-color-muted;
 
   &__sub {
-    font-size: 1rem;
     font-weight: 400;
+    font-size: 1rem;
   }
 }
 </style>

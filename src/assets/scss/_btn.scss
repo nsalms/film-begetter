@@ -1,15 +1,16 @@
+@use "sass:color";
 @use "vars" as *;
 
 .btn {
-  background: $background-accent;
-  border-radius: 0.75rem;
   padding: 1rem 2rem;
   color: white;
-  cursor: pointer;
+  background: $background-accent;
   border: 0;
+  border-radius: 0.75rem;
+  cursor: pointer;
   appearance: none;
 
   &:hover {
-    background: darken($background-accent, 5%);
+    background: color.adjust($background-accent, $lightness: -5%);
   }
 }
